@@ -625,6 +625,22 @@
 
       .nav-links.active { right: 0; }
       .nav-links a { font-size: 1.1rem; }
+
+      /* ── FIX: Cards centered & full-width on mobile ── */
+      .grid {
+        padding: 40px 16px;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 340px;
+        height: 360px;
+        /* Reset any stray transforms that push it off-centre */
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
@@ -639,7 +655,7 @@
       <span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.hmtl">Home</a></li>
+      <li><a href="Big G dent tech.html">Home</a></li>
       <li><a href="allservice.html">Services</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="Big G dent tech.html#about">About</a></li>
@@ -877,5 +893,4 @@
     });
   </script>
 </body>
-
 </html>
